@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strtoupper.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/27 22:41:05 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/27 22:41:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void		ft_strtoupper(char *str)
+{
+	int		index;
 
-#endif
+	index = 0;
+	while (str[index])
+	{
+		str[index] = ft_toupper(str[index]);
+		index++;
+	}
+}

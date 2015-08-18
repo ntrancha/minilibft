@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_cinstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 14:34:51 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 14:34:51 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int			ft_cinstr(char *str, char c)
+{
+	int		ret;
+	int		index;
 
-#endif
+	ret = 0;
+	index = 0;
+	while (str[index])
+	{
+		if (str[index] == c)
+			ret++;
+		index++;
+	}
+	return (ret);
+}

@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_listcontent.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/30 06:49:51 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/30 06:49:51 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int			ft_listcontent(t_list *list, t_node *node)
+{
+	t_node  *tmp;
 
-#endif
+	tmp = list->start;
+	while (tmp)
+	{
+		if (tmp == node)
+			return (1);
+		tmp = tmp->next;
+	}
+	return (0);
+}

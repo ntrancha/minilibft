@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/05 12:37:02 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/11/10 18:12:22 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-# include "mem/includes/mem.h
-
-#endif
+int		ft_isascii(int c)
+{
+	return (((unsigned)c) < 128);
+}

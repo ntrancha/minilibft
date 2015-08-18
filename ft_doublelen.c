@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_doublelen.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/27 20:04:06 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/27 20:04:06 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+size_t		ft_doublelen(double n)
+{
+	size_t	size;
+	char	*tmp;
+	char	*tmp2;
 
-#endif
+	if (!(tmp = ft_dtoa(n)))
+		return (0);
+	tmp2 = ft_strcleanback(tmp, '0');
+	size = ft_strlen(tmp2);
+	ft_strdel(&tmp);
+	ft_strdel(&tmp2);
+	return (size);
+}

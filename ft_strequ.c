@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/04 11:00:33 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/01/12 09:41:21 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
+#include "includes/macros.h"
 
-# include "mem/includes/mem.h
-
-#endif
+int		ft_strequ(char const *s1, char const *s2)
+{
+	if (s1 == s2)
+		return (EXIT_SUCCES);
+	if (!s1 || !s2 || !*s1 || !*s2)
+		return (EXIT_NULL);
+	while (*s1 != '\0' && *s2 != '\0')
+	{
+		if (*s1 != *s2)
+			return (EXIT_NULL);
+		s1++;
+		s2++;
+	}
+	if (*s1 == '\0' && *s2 == '\0')
+		return (EXIT_SUCCES);
+	return (EXIT_NULL);
+}

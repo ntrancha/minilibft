@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isopt.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/28 21:05:46 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/28 21:06:13 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int         ft_isopt(char *option)
+{
+    if (!option[0] || option[0] != '-')
+        return (0);
+    if (option[1])
+        if (option[1] == '-')
+            return (2);
+    return (1);
 
-#endif
+}

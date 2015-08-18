@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_power.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/16 11:15:45 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/01/13 10:14:30 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int     ft_power(int nbr, int power)
+{
+    int ret;
 
-#endif
+    ret = 1;
+    if (power == 0)
+		return (1);
+	if (nbr == 0)
+        return (0);
+    if (power == 1)
+        return (nbr);
+    while (power-- > 0)
+        ret *= nbr;
+    return (ret);
+}

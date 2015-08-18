@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/05 09:46:38 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/11/11 10:03:45 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void				*ft_memmove(void *dst, const void *src, size_t len)
+{
+	char			*pdst;
+	char			*psrc;
 
-#endif
+	pdst = (char *)dst;
+	psrc = (char *)src;
+	if (pdst <= psrc || pdst >= (psrc + len))
+	{
+		while (psrc && pdst && len--)
+			*pdst++ = *psrc++;
+	}
+	else
+	{
+		pdst += len - 1;
+		psrc += len - 1;
+		while (psrc && pdst && len--)
+			*pdst-- = *psrc--;
+	}
+	return (dst);
+}

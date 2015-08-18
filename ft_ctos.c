@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_ctos.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/15 17:34:54 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/15 17:34:54 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <stdlib.h>
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char		*ft_ctos(char c)
+{
+	char	*ret;
 
-#endif
+	ret = ft_strnew(1);
+	if (ret == NULL)
+		return (NULL);
+	ret[0] = c;
+	ret[1] = '\0';
+	return (ret);
+}

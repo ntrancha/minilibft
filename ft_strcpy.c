@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/03 15:37:03 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/11/08 16:48:06 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+char		*ft_strcpy(char *dst, const char *src)
+{
+	int		count;
+	char	*ptr;
 
-# include "mem/includes/mem.h
-
-#endif
+	count = 0;
+	ptr = dst;
+	while (src[count] != '\0')
+	{
+		ptr[count] = src[count];
+		count++;
+	}
+	ptr[count] = '\0';
+	return (dst);
+}

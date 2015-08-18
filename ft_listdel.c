@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_listdel.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/30 06:42:43 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/30 06:42:43 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void		ft_listdel(t_list *list, void (del)(void **))
+{
+	t_node	*node;
+	t_node	*tmp;
 
-#endif
+	if (list)
+	{
+		node = list->start;
+		while (node)
+		{
+			tmp = node->next;
+			ft_listdelnode(list, node, del);
+			node = tmp;
+		}
+	}
+	ft_memdel((void**)&list);
+}

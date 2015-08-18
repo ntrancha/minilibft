@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_getcol.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/29 03:57:59 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/29 04:01:04 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <sys/ioctl.h>
 
-# include "mem/includes/mem.h
+int                 ft_getcol(void)
+{
+    struct winsize  w;
 
-#endif
+    ioctl(0, TIOCGWINSZ, &w);
+    return (w.ws_col);
+}

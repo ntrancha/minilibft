@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strrvs.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 14:26:04 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 14:26:04 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <stdlib.h>
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char		*ft_strrvs(char *str)
+{
+	int		index;
+	int		count;
+	char	*ret;
 
-#endif
+	index = 0;
+	count = ft_strlen(str);
+	ret = ft_strnew(count + 1);
+	ret[count] = '\0';
+	while (str[index])
+	{
+		ret[count - 1] = str[index];
+		index++;
+		count--;
+	}
+	return (ret);
+}

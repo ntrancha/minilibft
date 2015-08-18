@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_listdelnodenext.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/31 11:35:44 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/12 21:26:39 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+t_node	    *ft_listdelnoden(t_list *list, t_node *node, void (del)(void **))
+{
+	t_node	*next;
 
-#endif
+	next= NULL;
+	if (list && node)
+	{
+		next = node->next;
+		ft_listdelnode(list, node, del);
+	}
+	return (next);
+}

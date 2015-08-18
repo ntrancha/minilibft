@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenclear.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/08/01 01:20:10 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/01 01:29:13 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void            ft_screenclear(void)
+{
+    t_screen    *screen;
 
-#endif
+    screen = ft_screeninit();
+    screen->cursor = 0;
+    screen->size = 0;
+    if (screen->buffer != NULL)
+        ft_casesdel(screen->buffer);
+    screen->buffer = NULL;
+    if (screen->original != NULL)
+        ft_casesdel(screen->original);
+    screen->original = NULL;
+}

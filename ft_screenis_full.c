@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenis_full.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/08/01 02:02:54 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/01 02:05:23 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int         ft_screenis_full(void)
+{
+    int     size;
+    int     row;
+    int     col;
 
-#endif
+    size = ft_screenget_size();
+    col = ft_screenget_col();
+    row = ft_screenget_row();
+    if (size >= (col * row))
+        return (1);
+    return (0);
+}

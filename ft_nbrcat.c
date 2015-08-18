@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_nbrcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 15:56:32 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 15:56:32 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
-
-#endif
+int		ft_nbrcat(int nbr, int nbr2)
+{
+	if (nbr2 < 0)
+		nbr2 = ft_abs(nbr2);
+	if (nbr < 0)
+		return (ft_neg(ft_nbrcat(ft_abs(nbr), nbr2)));
+	return ((nbr * ft_power(10, ft_nbrlen(nbr2))) + nbr2);
+}

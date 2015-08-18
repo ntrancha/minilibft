@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_floatlenfloat.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/26 23:12:44 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/26 23:12:44 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+size_t      ft_floatlenfloat(float n)
+{
+    size_t  size;
+    size_t  size2;
+	int		i;
 
-#endif
+	i = ft_ftoi(n);
+	size2 = ft_nbrlen(i) + 1;
+	size = ft_floatlen(n) - size2;
+	if (size < 1)
+		return (0);
+    return (size);
+}

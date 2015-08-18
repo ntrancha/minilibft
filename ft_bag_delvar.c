@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bag_delvar.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/28 05:51:31 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/28 05:52:46 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/bag.h"
 
-# include "mem/includes/mem.h
+t_var       *ft_bag_delvar(t_bag *bag, char *var, void(del)(void **))
+{
+    t_var   *node;
 
-#endif
+    if (!bag)
+        return (NULL);
+    node = bag->start;
+    while (node)
+        if (ft_strcmp(var, node->var) == 0)
+            return (ft_bag_delnode(bag, node, del));
+        else
+            node = node->next;
+    return (NULL);
+}

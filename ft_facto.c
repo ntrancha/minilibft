@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_facto.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/27 22:56:30 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/27 22:56:30 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int			ft_facto(int nb)
+{
+	int		i;
+	int		ret;
 
-#endif
+	i = 0;
+	ret = nb;
+	if (nb == 1 || nb == 0)
+		return (EXIT_SUCCES);
+	if (nb >= 13 || nb < 0)
+		return (EXIT_FAIL);
+	while (++i < nb)
+		ret *= (nb - i);
+	return (ret);
+}

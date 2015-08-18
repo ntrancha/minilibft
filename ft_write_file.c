@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_write_file.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/28 22:40:05 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/28 22:51:42 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int     ft_write_file(const char *pathname, char *content)
+{
+    int fd;
 
-#endif
+    if (!pathname || !content)
+        return (-1);
+    fd = open(pathname, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    if (fd < 0)
+        return (-1);
+    ft_putstr_fd(content, fd);
+    return (close(fd));
+}

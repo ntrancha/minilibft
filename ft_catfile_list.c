@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_catfile_list.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/31 22:49:14 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/31 22:49:14 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int			ft_catfile_list(const int fd)
+{
+	int		ret;
+	char	*str;
 
-#endif
+	ret = 42;
+	str = NULL;
+	while ((ret = ft_gnl_list(fd, &str)) == 1)
+	{
+		ft_putendl(str);
+		ft_strdel(&str);
+	}
+	if (ret != -1)
+		ft_putstr(str);
+	ft_strdel(&str);
+	return (ret);
+}

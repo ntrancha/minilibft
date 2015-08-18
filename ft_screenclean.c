@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenclean.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/08/01 01:31:12 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/01 01:41:02 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void            ft_screenclean(void)
+{
+    int         count;
 
-#endif
+    count = 0;
+    while (count++ <= ft_screenget_size())
+        ft_putchar('\b');
+    while (count-- >= 0)
+        ft_putchar(' ');
+    while (count++ <= ft_screenget_size())
+        ft_putchar('\b');
+    ft_screenset_cursor(0);
+    ft_screenset_size(0);
+}

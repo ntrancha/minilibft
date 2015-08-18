@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strcleanback.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 15:39:39 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 15:39:39 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char        *ft_strcleanback(char *str, char c)
+{
+    char    *tmp;
+    int     index;
 
-#endif
+    index = ft_strlen(str) - 1;
+    while (str[index] && str[index] == c)
+        index--;
+    if (!(tmp = ft_strsub(str, 0, index + 1)))
+        return (NULL);
+    return (tmp);
+}

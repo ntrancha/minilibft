@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_signalread.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/31 11:52:15 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/31 12:00:26 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <signal.h>
 
-# include "mem/includes/mem.h
+void        ft_signalread(int sig, void(sig_action)(int, siginfo_t*, void*))
+{
+    struct sigaction    signal;
 
-#endif
+    signal.sa_sigaction = sig_action;
+    signal.sa_flags = 0;
+    sigemptyset(&signal.sa_mask);
+    sigaction(sig, &signal, 0);
+}

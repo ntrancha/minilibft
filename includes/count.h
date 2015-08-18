@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   count.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/01/02 17:39:58 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/01/02 17:39:58 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef COUNT_H
+# define COUNT_H
+# include "libft.h"
 
-# include "mem/includes/mem.h
+size_t	ft_strlen(const char *str);
+size_t	ft_nbrlen(int nbr);
+size_t	ft_floatlenfloat(float n);
+size_t	ft_floatlen(float n);
+size_t	ft_longlen(long nbr);
+size_t	ft_doublelen(double n);
+size_t	ft_doublelendouble(double n);
+int		ft_cinstr(char *str, char c);
 
 #endif

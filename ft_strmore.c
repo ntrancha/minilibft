@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strmore.c   									:+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/10 08:18:45 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/10 08:18:45 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char		*ft_strmore(char *str, size_t n)
+{
+	char	*ret;
 
-#endif
+	if (!str || ft_strlen(str) >= n)
+		return (str);
+	ret = ft_strnew(n);
+	ret = ft_strcpy(ret, str);
+	return (ret);
+}

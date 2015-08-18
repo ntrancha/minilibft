@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_listlen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/30 08:06:41 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/30 08:06:41 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+size_t		ft_listlen(t_list *list)
+{
+	size_t	n;
+	t_node	*node;
 
-#endif
+	n = 0;
+	if (list)
+	{
+		node = list->start;
+		while (node)
+		{
+			n++;
+			node = node->next;
+		}
+	}
+	return (n);
+}

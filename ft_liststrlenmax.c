@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_liststrlenmax.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/30 19:45:30 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/03 19:45:10 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+size_t		ft_liststrlenmax(t_list *list)
+{
+	size_t	size;
+	t_node	*node;
 
-#endif
+	size = 0;
+	if (!list)
+		return (0);
+	node = list->start;
+	while (node)
+	{
+		if ((int)ft_strlen((char *)node->content) > (int)size)
+		    size = ft_strlen((char *)node->content);
+		node = node->next;
+	}
+	return (size);
+}

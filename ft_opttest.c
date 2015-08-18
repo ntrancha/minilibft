@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_opttest.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/28 21:06:26 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/07/28 21:06:53 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int         ft_opttest(t_opt *options, char *opt)
+{
+    t_node  *node;
 
-#endif
+    if (!opt || !options)
+        return (-1);
+    node = options->start;
+    while (node)
+        if (ft_strcmp((char*)node->content, opt) == 0)
+            return (ft_isopt((char *)node->content));
+        else
+            node = node->next;
+    return (0);
+}

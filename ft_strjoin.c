@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/06 13:59:10 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/11/19 12:55:49 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char		*ft_strjoin(char const *s1, char const *s2)
+{
+	char	*str;
 
-#endif
+	if (!s1 || !s2)
+		return (NULL);
+	str = ft_strnew(ft_strlen((char *)s1) + ft_strlen((char *)s2) + 1);
+	if (!str)
+		return (NULL);
+	str = ft_strcpy(str, s1);
+	str = ft_strcat(str, s2);
+	return (str);
+}

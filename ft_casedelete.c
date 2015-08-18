@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_casedelete.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/30 06:01:32 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/12 21:19:08 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <stdlib.h>
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
-
-#endif
+void    ft_casedelete(t_case *cases)
+{
+    if (cases != NULL)
+    {
+        if (cases->str != NULL)
+            ft_strdel(&cases->str);
+        if (cases->spec != NULL)
+            ft_strdel(&cases->spec);
+        free(cases);
+    }
+}

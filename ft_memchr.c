@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/05 10:06:02 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/11/19 12:39:49 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void				*ft_memchr(const void *s, int c, size_t n)
+{
+	unsigned char	*tmp;
 
-#endif
+	if (!n || !s)
+		return (NULL);
+	tmp = (unsigned char *)s;
+	while (n--)
+	{
+		if (*tmp == (unsigned char)c)
+			return ((void *)tmp);
+		tmp++;
+	}
+	return (NULL);
+}

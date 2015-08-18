@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 14:57:28 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 14:57:28 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int			ft_sqrt(int nbr)
+{
+	int		index;
 
-#endif
+	if (nbr <= 1)
+		RETURN_NULL;
+	index = nbr;
+	while (index > 1)
+	{
+		if ((index * index) == nbr)
+			return (index);
+		index--;
+	}
+	RETURN_NULL;
+}

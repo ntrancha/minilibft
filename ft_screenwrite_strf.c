@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenwrite_strf.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/30 06:50:42 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/01 03:40:56 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int             ft_screenwrite_strf(char *str, char *spec)
+{
+    int         count;
+    int         index;
 
-#endif
+    count = 0;
+    index = 0;
+    if (!str)
+        return (count);
+    while (str[index])
+    {
+        count += ft_screenwrite_charf(str[index], spec);
+        index++;
+    }
+    return (count);
+}

@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/11/08 15:44:18 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/01/12 09:43:54 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+char				*ft_strncat(char *s1, const char *s2, size_t n)
+{
+	int				count;
+	unsigned int	count2;
 
-#endif
+	count = ft_strlen(s1);
+	count2 = 0;
+	while (s2[count2] != '\0' && n > count2)
+	{
+		s1[count + count2] = s2[count2];
+		count2++;
+	}
+	s1[count + count2] = '\0';
+	return (s1);
+}

@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/25 15:05:11 by ntrancha          #+#    #+#             */
+/*   Updated: 2014/12/25 15:05:11 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+int				ft_is_prime(int nbr)
+{
+	int			index;
 
-#endif
+	if (nbr < 0)
+		nbr = ft_abs(nbr);
+	if (nbr < 2)
+		return (0);
+	index = nbr - 1;
+	while (index > 1)
+	{
+		if (!(nbr % index))
+			return (0);
+		index--;
+	}
+	return (1);
+}

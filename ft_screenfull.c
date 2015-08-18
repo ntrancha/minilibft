@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenfull.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/08/01 01:53:42 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/01 01:59:14 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void            ft_screenfull(char c, char *spec)
+{
+    int         col;
+    int         row;
+    t_screen    *screen;
 
-#endif
+    screen = ft_screeninit();
+    row = 0;
+    while (row < screen->row)
+    {
+        col = 0;
+        while (col < screen->col)
+        {
+            ft_screenwrite_char(c, spec);
+            col++;
+        }
+        row++;
+    }
+}

@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_screenfree.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 10:09:36 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 21:01:16 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/30 21:09:03 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/12 21:21:10 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <stdlib.h>
+#include "includes/libft.h"
 
-# include "mem/includes/mem.h
+void            ft_screenfree(void)
+{
+    t_screen    *screen;
 
-#endif
+    screen = ft_screeninit();
+    if (screen != NULL)
+    {
+        if (screen->buffer != NULL)
+            ft_casesdel(screen->buffer);
+        if (screen->original != NULL)
+            ft_casesdel(screen->original);
+        free(screen);
+    }
+    write(1, C_NULL, 4);
+}

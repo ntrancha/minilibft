@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 17:26:48 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 17:59:46 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:53:48 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char    *ft_strgetline(const char *str, int line)
 {

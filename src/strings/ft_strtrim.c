@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 14:33:04 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 15:10:52 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:03:07 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strtrim(char const *s)
 {

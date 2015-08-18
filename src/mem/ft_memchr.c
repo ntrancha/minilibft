@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:06:02 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 12:39:49 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:27:09 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include <string.h>
 
 void				*ft_memchr(const void *s, int c, size_t n)
 {

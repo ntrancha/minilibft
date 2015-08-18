@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:37:03 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/11 09:39:02 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:59:39 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char				*ft_strncpy(char *dst, const char *src, size_t n)
 {

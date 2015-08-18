@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memory.h                                           :+:      :+:    :+:   */
+/*   mem.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:38:42 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/02 17:38:42 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:23:01 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MEMORY_H
-# define MEMORY_H
+#ifndef MEM_H
+# define MEM_H
 # include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n);

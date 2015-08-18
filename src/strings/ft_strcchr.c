@@ -6,12 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/09 12:31:34 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/09 12:31:34 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:48:53 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include "includes/libft.h"
 
 int			ft_strcchr(char *source, char *search)
 {

@@ -6,27 +6,24 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 11:00:33 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/12 09:41:21 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:52:49 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
-#include "includes/macros.h"
 
 int		ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 == s2)
-		return (EXIT_SUCCES);
+		return (1);
 	if (!s1 || !s2 || !*s1 || !*s2)
-		return (EXIT_NULL);
+		return (0);
 	while (*s1 != '\0' && *s2 != '\0')
 	{
 		if (*s1 != *s2)
-			return (EXIT_NULL);
+			return (0);
 		s1++;
 		s2++;
 	}
 	if (*s1 == '\0' && *s2 == '\0')
-		return (EXIT_SUCCES);
-	return (EXIT_NULL);
+		return (1);
+	return (0);
 }

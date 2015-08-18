@@ -6,19 +6,20 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 16:08:57 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/29 16:08:57 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:35:00 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include <string.h>
+#include "../../includes/mem.h"
 
-void	*ft_ralloc(void *ptr, size_t size_of, size_t new_size)
+void	    *ft_ralloc(void *ptr, size_t size_of, size_t new_size)
 {
-	t_uchar	*new;
+	void    *new;
 
 	if (!ptr && size_of <= new_size)
 		return (ptr);
-	new = (t_uchar *)ft_memalloc(new_size);
+	new = ft_memalloc(new_size);
 	if (new)
 	{
 		ft_memcpy(new, ptr, new_size);

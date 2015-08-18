@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 14:13:14 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 14:13:14 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:05:50 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/mem.h"
 
 void		ft_tabstrdel(char **str)
 {

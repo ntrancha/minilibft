@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 12:32:01 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 15:44:04 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:59:17 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 int					ft_strncmp(const char *s1, const char *s2, size_t n)
 {

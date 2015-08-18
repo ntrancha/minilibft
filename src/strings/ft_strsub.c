@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 11:14:08 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 14:52:04 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:02:34 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char				*ft_strsub(char const *s, unsigned int start, size_t len)
 {

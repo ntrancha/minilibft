@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 14:47:49 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 14:47:49 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:01:06 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strralloc(char **str, int len)
 {

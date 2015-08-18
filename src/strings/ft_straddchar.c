@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 05:54:23 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/15 05:54:23 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:48:07 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/mem.h"
+#include "../../includes/strings.h"
 
 void		ft_straddchar(char **str, char c)
 {
@@ -25,7 +25,7 @@ void		ft_straddchar(char **str, char c)
 	else
 		tmp = ft_strdup("");
 	ft_strdel(str);
-	tmp2 = malloc(sizeof(char) * (ft_strlen(tmp) + 2));
+	tmp2 = ft_memalloc(sizeof(char) * (ft_strlen(tmp) + 2));
 	while (tmp[++index])
 		tmp2[index] = tmp[index];
 	tmp2[index] = c;

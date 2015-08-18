@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:44:18 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/12 09:43:54 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:59:04 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char				*ft_strncat(char *s1, const char *s2, size_t n)
 {

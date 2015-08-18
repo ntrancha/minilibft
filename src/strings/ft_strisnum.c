@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/17 07:46:17 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/02/17 07:46:17 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:54:30 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/test.h"
 
 int		ft_strisnum(const char *str)
 {

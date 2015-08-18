@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 16:21:51 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/29 16:21:51 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:40:50 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 int			ft_match(char const *str, char const *match)
 {
@@ -22,10 +22,10 @@ int			ft_match(char const *str, char const *match)
 		{
 			match++;
 			if (*match)
-				return (EXIT_SUCCES);
+				return (1);
 			tmp = ft_strchr(str, *match);
-			if (tmp == NULL)
-				return (EXIT_NULL);
+			if (!tmp)
+				return (0);
 			else
 				str = tmp;
 		}
@@ -35,7 +35,7 @@ int			ft_match(char const *str, char const *match)
 			match++;
 		}
 		else
-			return (EXIT_NULL);
+			return (0);
 	}
 	return (*str && *match);
 }

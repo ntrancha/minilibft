@@ -6,13 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/24 11:21:59 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 02:32:17 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:00:38 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
-#include "includes/macros.h"
+#include "../../includes/strings.h"
 
 static int	find_first(char *str, char *search)
 {

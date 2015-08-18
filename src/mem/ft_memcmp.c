@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:12:29 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/12 09:41:46 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:28:45 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
-#include "includes/macros.h"
+#include <string.h>
 
 int					ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -21,7 +20,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n)
 	s1_tmp = (const unsigned char *)s1;
 	s2_tmp = (const unsigned char *)s2;
 	if (!s1 || !s2)
-		return (EXIT_NULL);
+		return (0);
 	while (n--)
 	{
 		if (*s1_tmp != *s2_tmp)
@@ -29,5 +28,5 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n)
 		s1_tmp++;
 		s2_tmp++;
 	}
-	return (EXIT_NULL);
+	return (0);
 }

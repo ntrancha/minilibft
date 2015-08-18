@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 09:28:42 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/15 09:54:54 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:24:52 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include <string.h>
 
 void		*ft_memcpy(void *dst, const void *src, size_t n)
 {

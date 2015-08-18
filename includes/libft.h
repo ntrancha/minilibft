@@ -13,6 +13,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "mem/includes/mem.h
+# include "strings.h"
+# include "mem.h"
+# include "macros.h"
 
 #endif

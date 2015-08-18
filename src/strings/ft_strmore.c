@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/10 08:18:45 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/10 08:18:45 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:58:58 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strmore(char *str, size_t n)
 {

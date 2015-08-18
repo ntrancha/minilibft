@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:38:18 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 14:20:32 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:00:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/mem.h"
 
 char		*ft_strnew(size_t size)
 {

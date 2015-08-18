@@ -6,12 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:07:30 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/13 14:08:22 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:35:31 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "includes/libft.h"
+#include <string.h>
+#include "../../includes/mem.h"
 
 void		*ft_memalloc(size_t size)
 {

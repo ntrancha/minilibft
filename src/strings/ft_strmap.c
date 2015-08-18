@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:25:02 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 13:03:58 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:57:14 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strmap(char const *s, char (*f)(char))
 {
@@ -21,7 +20,7 @@ char		*ft_strmap(char const *s, char (*f)(char))
 	if (s && f)
 	{
 		index = 0;
-		result = malloc(sizeof(char) * (ft_strlen((char *)s) + 1));
+		result = ft_strnew(ft_strlen((char *)s) + 1);
 		while (s[index] != '\0')
 		{
 			result[index] = f(s[index]);

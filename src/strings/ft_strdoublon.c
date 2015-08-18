@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/13 10:38:49 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/13 11:05:12 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:51:15 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 void		ft_strdoublon(char **str, char del)
 {

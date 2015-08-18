@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 14:26:04 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 14:26:04 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:01:23 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strrvs(char *str)
 {

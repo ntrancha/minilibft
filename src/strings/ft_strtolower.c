@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 22:43:45 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 22:43:45 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:02:42 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 void	ft_strtolower(char *str)
 {

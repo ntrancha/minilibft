@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:52:32 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/10 12:47:20 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:57:32 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -28,7 +27,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	chaine = size - ft_strlen(dst) - 2;
 	if (chaine < 0)
 		return (taille);
-	dest = malloc(sizeof(char) * chaine + ft_strlen(dst) + 1);
+	dest = ft_strnew(chaine + ft_strlen(dst) + 1);
 	dest = ft_strncat(dst, source, chaine + 1);
 	dst = dest;
 	return (taille);

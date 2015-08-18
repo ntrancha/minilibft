@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:30:09 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 13:19:08 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:51:56 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/mem.h"
+#include "../../includes/strings.h"
 
 char		*ft_strdup(const char *str)
 {
@@ -21,7 +21,7 @@ char		*ft_strdup(const char *str)
 	count = 0;
 	if (!str)
 		return (NULL);
-	new = malloc(sizeof(char) * ft_strlen(str) + 1);
+	new = ft_memalloc(sizeof(char) * ft_strlen(str) + 1);
 	if (!new)
 		return (NULL);
 	while (str[count] != '\0')

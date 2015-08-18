@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 09:46:38 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/11 10:03:45 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:29:24 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include <string.h> 
 
 void				*ft_memmove(void *dst, const void *src, size_t len)
 {

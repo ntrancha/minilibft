@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 15:30:15 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 15:30:15 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 22:50:12 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_strcleanfront(char *str, char c)
 {

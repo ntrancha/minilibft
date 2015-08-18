@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/21 09:18:06 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/09 09:48:34 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/18 23:02:12 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/mem.h"
 
 static char			**strsplit(char *s, char c, int nbr)
 {
@@ -23,7 +23,7 @@ static char			**strsplit(char *s, char c, int nbr)
 	start = 0;
 	index = 0;
 	count = 0;
-	if (!(ret = malloc(sizeof(char*) * nbr * 2)))
+	if (!(ret = ft_memalloc(sizeof(char*) * nbr * 2)))
 		return (NULL);
 	while (s[index])
 	{
@@ -81,7 +81,7 @@ char				**ft_strsplit(char const *s, char c)
 
 	if (s == NULL)
 	{
-		ret = malloc(sizeof(char *) * 2);
+		ret = ft_memalloc(sizeof(char *) * 2);
 		ret[0] = NULL;
 		return (ret);
 	}
@@ -89,7 +89,7 @@ char				**ft_strsplit(char const *s, char c)
 	ft_strdoublon(&str, c);
 	if (!str)
 	{
-		ret = malloc(sizeof(char) * 2);
+		ret = ft_memalloc(sizeof(char) * 2);
 		ret[0] = NULL;
 		return (ret);
 	}

@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 22:40:05 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 22:57:10 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:31:23 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/put.h"
 
 int     ft_write_file_end(const char *pathname, char *content)
 {

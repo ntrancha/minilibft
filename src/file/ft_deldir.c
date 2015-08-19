@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/16 20:24:49 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/16 22:56:34 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:23:48 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 #include <dirent.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/file.h"
+#include "../../includes/mem.h"
 
 static void     tfile_del(t_file *file)
 {

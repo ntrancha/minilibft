@@ -6,12 +6,15 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/29 02:31:03 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/29 02:55:33 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:30:17 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/count.h"
+#include "../../includes/convert.h"
+#include "../../includes/macros.h"
 
 int         ft_readfile_list(int const fd, t_list *list)
 {

@@ -6,12 +6,15 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 17:50:48 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 17:50:48 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:28:45 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/count.h"
+#include "../../includes/count.h"
+#include "../../includes/list.h"
 
 static int			readfile(int const fd, t_list *list)
 {

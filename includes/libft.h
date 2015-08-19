@@ -26,5 +26,9 @@
 # include "tab.h"
 # include "socket.h"
 # include "screen.h"
+# include "convert.h"
+# include "file.h"
+# include "list.h"
+# include "macros.h"
 
 #endif

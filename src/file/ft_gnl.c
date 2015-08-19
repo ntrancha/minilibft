@@ -6,13 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/29 11:00:50 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/12 09:44:27 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:28:18 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "includes/libft.h"
-#include "includes/macros.h"
+#include "../../includes/file.h"
+#include "../../includes/count.h"
+#include "../../includes/strings.h"
 
 static int		get_next_line_split(char *all, char **line)
 {

@@ -6,12 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/31 22:49:14 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/31 22:49:14 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:22:39 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/file.h"
+#include "../../includes/macros.h"
 
 int			ft_catfile(const int fd)
 {
@@ -25,7 +26,7 @@ int			ft_catfile(const int fd)
 	{
 			line = ft_strnew(BUFF_SIZE + 2);
 			if ( line == NULL || (ret = read(fd, line, BUFF_SIZE)) == -1 )
-					return (EXIT_FAIL);
+					return (-1);
 			line[ret] = '\0';
 			while ((int)ft_strlen(line) != ret)
 					line[ft_strlen(line)] = '\a';
@@ -35,5 +36,5 @@ int			ft_catfile(const int fd)
 			ft_putstr(line);
 			ft_strdel(&line);
 	}
-	return (EXIT_NULL);
+	return (0);
 }

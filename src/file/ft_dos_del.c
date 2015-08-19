@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/16 20:24:49 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/17 04:09:10 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:24:11 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include <dirent.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/mem.h"
 
 void            ft_dos_del(t_dos *list)
 {

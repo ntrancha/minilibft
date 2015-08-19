@@ -6,13 +6,15 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/11 11:32:26 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/11 13:57:15 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:29:34 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <fcntl.h>
 #include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/count.h"
+#include "../../includes/macros.h"
 
 int             ft_readfile(int const fd, char **all)
 {

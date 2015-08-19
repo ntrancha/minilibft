@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 06:41:02 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:18:06 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:26:33 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/strings.h"
+#include "../../includes/macros.h"
 
 static int  readfile_next(const int fd, char **str, t_list *list)
 {

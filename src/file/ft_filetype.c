@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/17 02:30:13 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/17 03:20:51 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:26:01 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <sys/stat.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
 
 char    ft_filetype(t_file *file)
 {

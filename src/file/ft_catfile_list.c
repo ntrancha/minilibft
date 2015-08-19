@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/31 22:49:14 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/31 22:49:14 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:23:15 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/file.h"
+#include "../../includes/put.h"
 
 int			ft_catfile_list(const int fd)
 {

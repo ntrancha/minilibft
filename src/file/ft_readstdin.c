@@ -6,12 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/29 02:55:42 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/29 02:56:20 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:30:46 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/list.h"
+#include "../../includes/macros.h"
 
 int         ft_readstdin(char **str)
 {

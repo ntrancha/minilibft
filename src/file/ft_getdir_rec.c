@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/17 02:48:24 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/17 04:16:57 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:27:08 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/mem.h"
+#include "../../includes/strings.h"
 
 t_dos                *parcour(t_dos *dos, char *path, char *error);
 

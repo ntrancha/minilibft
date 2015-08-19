@@ -6,11 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/17 00:26:26 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/17 00:32:08 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:25:07 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/file.h"
+#include "../../includes/count.h"
+#include "../../includes/strings.h"
+#include "../../includes/put.h"
 
 static t_file       *fileinfo_get(t_node *node)
 {

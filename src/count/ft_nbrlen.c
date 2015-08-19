@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/08 07:24:50 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/08 07:24:50 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:09:28 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include <string.h>
 
 size_t		ft_nbrlen(int nbr)
 {

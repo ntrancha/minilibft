@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 14:34:51 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 14:34:51 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:07:10 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int			ft_cinstr(char *str, char c)
 {

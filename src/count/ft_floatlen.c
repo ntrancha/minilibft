@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/26 22:50:27 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/26 22:50:27 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:08:30 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/count.h"
+#include "../../includes/convert.h"
 
 size_t		ft_floatlen(float n)
 {

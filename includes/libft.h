@@ -13,8 +13,9 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "strings.h"
 # include "mem.h"
-# include "macros.h"
+# include "strings.h"
+# include "test.h"
+# include "math.h"
 
 #endif

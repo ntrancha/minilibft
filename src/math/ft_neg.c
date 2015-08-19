@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 11:42:55 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/16 11:42:55 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:51:42 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int		ft_neg(int nbr)
 {

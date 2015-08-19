@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 22:56:30 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 22:56:30 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:50:22 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int			ft_facto(int nb)
 {
@@ -20,9 +18,9 @@ int			ft_facto(int nb)
 	i = 0;
 	ret = nb;
 	if (nb == 1 || nb == 0)
-		return (EXIT_SUCCES);
+		return (1);
 	if (nb >= 13 || nb < 0)
-		return (EXIT_FAIL);
+		return (0);
 	while (++i < nb)
 		ret *= (nb - i);
 	return (ret);

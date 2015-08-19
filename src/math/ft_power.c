@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 11:15:45 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/13 10:14:30 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:52:10 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int     ft_power(int nbr, int power)
 {

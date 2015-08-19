@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 07:40:58 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/29 07:40:58 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:46:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int			ft_isspace(char c)
 {

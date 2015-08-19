@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 21:05:46 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 21:06:13 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:46:19 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/opt.h"
 
 int         ft_isopt(char *option)
 {

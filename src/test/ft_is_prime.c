@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 15:05:11 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 15:05:11 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:46:50 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/math.h"
 
 int				ft_is_prime(int nbr)
 {

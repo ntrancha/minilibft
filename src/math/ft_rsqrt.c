@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 22:58:47 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 22:58:47 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:52:25 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 float		ft_rsqrt(float nb)
 {
@@ -18,7 +16,7 @@ float		ft_rsqrt(float nb)
 	float	i;
 
 	if (nb == 0)
-		return (EXIT_NULL);
+		return (0);
 	i = 1;
 	if (nb > 1)
 	{

@@ -16,7 +16,17 @@ FLAG =	-Wall -Wextra -Werror
 
 OBJS =	$(FILE:.c=.o)
 
-FILE =	../minilibft/src/strings/ft_strequ.c\
+FILE =	../minilibft/src/mem/ft_memchr.c\
+		../minilibft/src/mem/ft_memcpy.c\
+		../minilibft/src/mem/ft_memccpy.c\
+		../minilibft/src/mem/ft_memmove.c\
+		../minilibft/src/mem/ft_ralloc.c\
+		../minilibft/src/mem/ft_memset.c\
+		../minilibft/src/mem/ft_bzero.c\
+		../minilibft/src/mem/ft_memalloc.c\
+		../minilibft/src/mem/ft_memdel.c\
+		../minilibft/src/mem/ft_memcmp.c\
+		../minilibft/src/strings/ft_strequ.c\
 		../minilibft/src/strings/ft_strnequ.c\
 		../minilibft/src/strings/ft_strcmp.c\
 		../minilibft/src/strings/ft_strncmp.c\
@@ -61,16 +71,33 @@ FILE =	../minilibft/src/strings/ft_strequ.c\
 		../minilibft/src/strings/ft_strdoublon.c\
 		../minilibft/src/strings/ft_strisnum.c\
 		../minilibft/src/strings/ft_strgetline.c\
-		../minilibft/src/mem/ft_memchr.c\
-		../minilibft/src/mem/ft_memcpy.c\
-		../minilibft/src/mem/ft_memccpy.c\
-		../minilibft/src/mem/ft_memmove.c\
-		../minilibft/src/mem/ft_ralloc.c\
-		../minilibft/src/mem/ft_memset.c\
-		../minilibft/src/mem/ft_bzero.c\
-		../minilibft/src/mem/ft_memalloc.c\
-		../minilibft/src/mem/ft_memdel.c\
-		../minilibft/src/mem/ft_memcmp.c\
+		../minilibft/src/test/ft_isdigit.c\
+		../minilibft/src/test/ft_isalpha.c\
+		../minilibft/src/test/ft_isalnum.c\
+		../minilibft/src/test/ft_isascii.c\
+		../minilibft/src/test/ft_isprint.c\
+		../minilibft/src/test/ft_istolower.c\
+		../minilibft/src/test/ft_istoupper.c\
+		../minilibft/src/test/ft_isspace.c\
+		../minilibft/src/test/ft_is_prime.c\
+		../minilibft/src/math/ft_abs.c\
+		../minilibft/src/math/ft_find_next_prime.c\
+		../minilibft/src/math/ft_neg.c\
+		../minilibft/src/math/ft_power.c\
+		../minilibft/src/math/ft_sqrt.c\
+		../minilibft/src/math/ft_facto.c\
+		../minilibft/src/math/ft_abs_long.c\
+		../minilibft/src/math/ft_neg_long.c\
+		../minilibft/src/math/ft_abs_longlong.c\
+		../minilibft/src/math/ft_abs_float.c\
+		../minilibft/src/math/ft_neg_float.c\
+		../minilibft/src/math/ft_rsqrt.c\
+		../minilibft/src/math/ft_cos.c\
+		../minilibft/src/math/ft_sin.c\
+		../minilibft/src/math/ft_tan.c\
+		../minilibft/src/math/ft_abs_double.c\
+		../minilibft/src/math/ft_neg_double.c\
+		../minilibft/src/math/ft_nbrcat.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

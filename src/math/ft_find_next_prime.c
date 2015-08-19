@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/25 15:12:27 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/25 15:12:27 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:50:45 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/test.h"
 
 int			ft_find_next_prime(int nb)
 {

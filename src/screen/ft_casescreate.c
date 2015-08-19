@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/30 05:19:35 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/30 05:57:38 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:07:09 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
+#include "../../includes/mem.h"
 
 t_case          *ft_casescreate(void)
 {

@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/30 20:33:40 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:22:03 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:08:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
+#include "../../includes/strings.h"
 
 static void    addinbuff_str(char *str)
 {

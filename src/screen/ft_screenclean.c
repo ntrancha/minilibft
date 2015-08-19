@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/01 01:31:12 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/01 01:41:02 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:08:52 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
+#include "../../includes/strings.h"
+#include "../../includes/put.h"
 
 void            ft_screenclean(void)
 {

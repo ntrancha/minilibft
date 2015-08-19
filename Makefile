@@ -158,6 +158,39 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/socket/ft_socket_read.c\
 		../minilibft/src/socket/ft_socket_end.c\
 		../minilibft/src/socket/ft_socket_end_co.c\
+		../minilibft/src/screen/ft_casescreate.c\
+		../minilibft/src/screen/ft_caseadd.c\
+		../minilibft/src/screen/ft_caseset.c\
+		../minilibft/src/screen/ft_casendel.c\
+		../minilibft/src/screen/ft_casedel.c\
+		../minilibft/src/screen/ft_casedelend.c\
+		../minilibft/src/screen/ft_casedelete.c\
+		../minilibft/src/screen/ft_casesdel.c\
+		../minilibft/src/screen/ft_screeninit.c\
+		../minilibft/src/screen/ft_screenget_row.c\
+		../minilibft/src/screen/ft_screenget_col.c\
+		../minilibft/src/screen/ft_screenget_offset.c\
+		../minilibft/src/screen/ft_screenget_cursor.c\
+		../minilibft/src/screen/ft_screenget_size.c\
+		../minilibft/src/screen/ft_screenget_buffer.c\
+		../minilibft/src/screen/ft_screenget_original.c\
+		../minilibft/src/screen/ft_screenset_offset.c\
+		../minilibft/src/screen/ft_screenset_cursor.c\
+		../minilibft/src/screen/ft_screenset_lcursor.c\
+		../minilibft/src/screen/ft_screenset_size.c\
+		../minilibft/src/screen/ft_screenwrite_charl.c\
+		../minilibft/src/screen/ft_screenwrite_char.c\
+		../minilibft/src/screen/ft_screenwrite_str.c\
+		../minilibft/src/screen/ft_screenwrite_charf.c\
+		../minilibft/src/screen/ft_screenwrite_strf.c\
+		../minilibft/src/screen/ft_screenprint.c\
+		../minilibft/src/screen/ft_screenbuffering.c\
+		../minilibft/src/screen/ft_screenfree.c\
+		../minilibft/src/screen/ft_screenclear.c\
+		../minilibft/src/screen/ft_screenclean.c\
+		../minilibft/src/screen/ft_screenreset.c\
+		../minilibft/src/screen/ft_screenfull.c\
+		../minilibft/src/screen/ft_screenis_full.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

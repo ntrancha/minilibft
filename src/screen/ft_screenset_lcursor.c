@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/01 02:35:26 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/01 02:40:27 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:14:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
 
 int     ft_screenset_lcursor(int col, int row)
 {

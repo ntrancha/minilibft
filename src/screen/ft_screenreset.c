@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/01 01:50:58 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/01 01:51:51 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:14:00 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
 
 void    ft_screenreset(void)
 {

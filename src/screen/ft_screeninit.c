@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/30 05:47:08 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/01 00:47:39 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:13:17 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
+#include "../../includes/mem.h"
+#include "../../includes/extra.h"
 
 t_screen            *ft_screeninit(void)
 {

@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/30 06:22:58 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/30 06:26:24 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:16:00 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
 
 int             ft_screenset_size(int size)
 {

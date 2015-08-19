@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/01 01:53:42 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/01 01:59:14 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:11:07 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
 
 void            ft_screenfull(char c, char *spec)
 {

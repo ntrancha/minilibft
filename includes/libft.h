@@ -25,5 +25,6 @@
 # include "put.h"
 # include "tab.h"
 # include "socket.h"
+# include "screen.h"
 
 #endif

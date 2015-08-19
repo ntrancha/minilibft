@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/01 00:50:32 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:22:28 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:07:53 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/screen.h"
+#include "../../includes/strings.h"
 
 int         ft_caseset(t_case *cases, int num, char *str, char *spec)
 {

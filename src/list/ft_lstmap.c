@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 07:16:34 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/29 07:16:34 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:38:26 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
+#include "../../includes/mem.h"
 
 static void	free_list(void *data, size_t data_size)
 {

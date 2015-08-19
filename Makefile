@@ -108,6 +108,7 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/count/ft_nbrlen.c\
 		../minilibft/src/count/ft_floatlenfloat.c\
 		../minilibft/src/count/ft_floatlen.c\
+		../minilibft/src/count/ft_longlen.c\
 		../minilibft/src/count/ft_doublelen.c\
 		../minilibft/src/count/ft_doublelendouble.c\
 		../minilibft/src/count/ft_cinstr.c\
@@ -255,7 +256,6 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/list/ft_listreverse.c\
 		../minilibft/src/list/ft_listswap.c\
 		../minilibft/src/list/ft_listputstr.c\
-		../minilibft/src/list/ft_gnl_list.c\
 		../minilibft/src/list/ft_lstdel.c\
 		../minilibft/src/list/ft_lstdelone.c\
 		../minilibft/src/list/ft_lstnew.c\

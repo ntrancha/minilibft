@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 19:31:54 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 19:31:54 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:36:47 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
+#include "../../includes/strings.h"
 
 char		*ft_listtostr(t_list *list)
 {

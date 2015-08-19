@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 08:06:41 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 08:06:41 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:34:33 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
 
 size_t		ft_listlen(t_list *list)
 {

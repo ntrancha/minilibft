@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 06:52:30 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 06:52:30 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:36:28 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
+#include "../../includes/macros.h"
 
 static void	list_swap(t_list *list, t_node *node, t_node *node2)
 {

@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 05:42:03 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 05:42:03 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:33:11 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
+#include "../../includes/mem.h"
 
 t_list		*ft_listcreate(void)
 {

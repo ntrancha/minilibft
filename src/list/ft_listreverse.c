@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/30 17:41:50 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/30 17:41:50 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:34:58 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/list.h"
+#include "../../includes/mem.h"
 
 t_list		*ft_listreverse(t_list *list)
 {

@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabmax.c                                        :+:      :+:    :+:   */
+/*   ft_puttab.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/12/15 12:19:23 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/19 06:44:37 by ntrancha         ###   ########.fr       */
+/*   Created: 2014/12/15 12:20:06 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/19 06:46:19 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../../includes/put.h"
 #include "../../includes/tab.h"
 
-int     ft_tabmax(t_tab *tab)
+int     ft_puttab(t_tab *tab)
 {
-    int max;
-    int i;
-    int j;
+    int line;
+    int col;
 
-    i = 0;
-    max = 0;
-    while (i < tab->col)
+    col = 0;
+    if (tab == NULL || tab->tab == NULL)
+        return (-1);
+    while (col < tab->col)
     {
-        j = 0;
-        while (j < tab->line)
+        line = 0;
+        while (line < tab->line)
         {
-            if (tab->tab[i][j] > max)
-                max = tab->tab[i][j];
-            j++;
+            ft_putnbr(tab->tab[col][line]);
+            ft_putchar('\t');
+            line++;
         }
-        i++;
+        ft_putchar('\n');
+        col++;
     }
-    return (max);
+    return (0);
 }

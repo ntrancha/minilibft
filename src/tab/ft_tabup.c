@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 08:53:40 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/16 08:53:40 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:45:29 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/tab.h"
 
 void	ft_tabup(t_tab *tab, int up)
 {

@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 21:35:45 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/29 21:35:45 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:44:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/tab.h"
 
 t_tab		*ft_tabdup(t_tab *tab)
 {

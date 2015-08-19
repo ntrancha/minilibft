@@ -6,25 +6,25 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 05:49:43 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/15 05:49:43 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:45:18 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/tab.h"
+#include "../../includes/mem.h"
 
 static int	**tabnew(int line, int col)
 {
 	int		**ptr;
 	int		i;
 
-	ptr = malloc(col * sizeof(*ptr));
+	ptr = ft_memalloc(col * sizeof(*ptr));
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
 	while (i < col)
 	{
-		ptr[i] = malloc(line * sizeof(**ptr));
+		ptr[i] = ft_memalloc(line * sizeof(**ptr));
      	if (ptr[i] == NULL)
 			return (NULL);
 		i++;
@@ -38,7 +38,7 @@ t_tab		*ft_tabnew(int line, int col)
 
 	if (line < 1 || col < 1)
 		return (NULL);
-	if ((tab = malloc(sizeof(t_tab))) == NULL)
+	if ((tab = ft_memalloc(sizeof(t_tab))) == NULL)
 		return (NULL);
 	if ((tab->tab = tabnew(line, col)) == NULL)
 		return (NULL);

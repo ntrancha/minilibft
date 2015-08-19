@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 12:17:21 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/15 12:17:21 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:44:47 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/tab.h"
 
 int     ft_tabmin(t_tab *tab)
 {

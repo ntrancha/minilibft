@@ -23,5 +23,6 @@
 # include "extra.h"
 # include "opt.h"
 # include "put.h"
+# include "tab.h"
 
 #endif

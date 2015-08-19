@@ -144,6 +144,14 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/put/ft_putfloat.c\
 		../minilibft/src/put/ft_putlong.c\
 		../minilibft/src/put/ft_putdouble.c\
+		../minilibft/src/tab/ft_tabmin.c\
+		../minilibft/src/tab/ft_tabmax.c\
+		../minilibft/src/tab/ft_tabup.c\
+		../minilibft/src/tab/ft_tabdup.c\
+		../minilibft/src/tab/ft_puttab.c\
+		../minilibft/src/tab/ft_tabclear.c\
+		../minilibft/src/tab/ft_tabdel.c\
+		../minilibft/src/tab/ft_tabnew.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

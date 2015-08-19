@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 01:21:50 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/30 15:36:30 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:02:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/socket.h"
+#include "../../includes/convert.h"
 
 SOCKET  ft_socket_init_client(const char *address, const char *port)
 {

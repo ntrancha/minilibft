@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 01:04:28 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 01:08:41 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:01:20 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int ft_socket_init(void)
 {

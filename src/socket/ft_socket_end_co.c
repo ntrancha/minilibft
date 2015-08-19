@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 01:10:57 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 01:18:20 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 07:01:01 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/socket.h"
 
 void ft_socket_end_co(SOCKET sock)
 {

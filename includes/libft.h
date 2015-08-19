@@ -24,5 +24,6 @@
 # include "opt.h"
 # include "put.h"
 # include "tab.h"
+# include "socket.h"
 
 #endif

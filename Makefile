@@ -152,6 +152,12 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/tab/ft_tabclear.c\
 		../minilibft/src/tab/ft_tabdel.c\
 		../minilibft/src/tab/ft_tabnew.c\
+		../minilibft/src/socket/ft_socket_init.c\
+		../minilibft/src/socket/ft_socket_init_server.c\
+		../minilibft/src/socket/ft_socket_init_client.c\
+		../minilibft/src/socket/ft_socket_read.c\
+		../minilibft/src/socket/ft_socket_end.c\
+		../minilibft/src/socket/ft_socket_end_co.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

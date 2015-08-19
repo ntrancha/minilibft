@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 05:51:31 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 05:52:46 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:57:52 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/bag.h"
+#include "../../includes/bag.h"
+#include "../../includes/strings.h"
 
 t_var       *ft_bag_delvar(t_bag *bag, char *var, void(del)(void **))
 {

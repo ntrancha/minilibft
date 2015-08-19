@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 05:54:24 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 05:55:17 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:57:09 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/bag.h"
+#include "../../includes/bag.h"
+#include "../../includes/mem.h"
 
 void    ft_bag_del(t_bag *bag, void(del)(void**))
 {

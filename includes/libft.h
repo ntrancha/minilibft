@@ -17,5 +17,6 @@
 # include "strings.h"
 # include "test.h"
 # include "math.h"
+# include "bag.h"
 
 #endif

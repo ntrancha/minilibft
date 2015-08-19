@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 05:52:58 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 05:54:19 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:57:35 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/bag.h"
+#include "../../includes/bag.h"
+#include "../../includes/mem.h"
 
 t_var   *ft_bag_delnode(t_bag *bag, t_var *node, void (del)(void **))
 {

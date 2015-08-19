@@ -98,6 +98,12 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/math/ft_abs_double.c\
 		../minilibft/src/math/ft_neg_double.c\
 		../minilibft/src/math/ft_nbrcat.c\
+		../minilibft/src/bag/ft_bag_create.c\
+		../minilibft/src/bag/ft_bag_addvar.c\
+		../minilibft/src/bag/ft_bag_delvar.c\
+		../minilibft/src/bag/ft_bag_delnode.c\
+		../minilibft/src/bag/ft_bag_del.c\
+		../minilibft/src/bag/ft_bag_content.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

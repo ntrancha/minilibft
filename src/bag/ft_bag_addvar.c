@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 05:50:44 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/07/28 18:07:32 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:56:14 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/bag.h"
+#include "../../includes/bag.h"
+#include "../../includes/mem.h"
+#include "../../includes/strings.h"
 
 t_bag        *ft_bag_addvar(t_bag *bag, void *content, char *var)
 {

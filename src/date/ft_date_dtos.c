@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 02:47:56 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 05:53:23 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:21:25 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/date.h"
+#include "../../includes/date.h"
 
 long    ft_date_dtos(int day)
 {

@@ -6,11 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/09 09:50:56 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:24:16 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:16:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/date.h"
+#include "../../includes/mem.h"
+#include "../../includes/strings.h"
+#include "../../includes/convert.h"
 
 t_date      *date_create(void)
 {

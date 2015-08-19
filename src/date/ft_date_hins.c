@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 02:45:48 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/07 02:47:35 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:21:57 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/date.h"
+#include "../../includes/date.h"
 
 int     ft_date_hins(int hour)
 {

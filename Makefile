@@ -111,6 +111,16 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/count/ft_doublelen.c\
 		../minilibft/src/count/ft_doublelendouble.c\
 		../minilibft/src/count/ft_cinstr.c\
+		../minilibft/src/date/ft_date_convert.c\
+		../minilibft/src/date/ft_date_modiftime.c\
+		../minilibft/src/date/ft_date_modifdate.c\
+		../minilibft/src/date/ft_date_summertime.c\
+		../minilibft/src/date/ft_date_diny.c\
+		../minilibft/src/date/ft_date_mtos.c\
+		../minilibft/src/date/ft_date_htos.c\
+		../minilibft/src/date/ft_date_dtos.c\
+		../minilibft/src/date/ft_date_timestamp.c\
+		../minilibft/src/date/ft_timestamp.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

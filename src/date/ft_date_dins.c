@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 02:47:56 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/07 02:49:11 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:21:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/date.h"
+#include "../../includes/date.h"
 
 int     ft_date_dins(int day)
 {

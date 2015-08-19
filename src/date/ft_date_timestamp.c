@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 14:46:21 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:25:17 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:23:01 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/date.h"
+#include "../../includes/mem.h"
 #define YEAR    date->year ==
 
 long		days_since_year(t_date *date)

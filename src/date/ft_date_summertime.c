@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/10 01:41:11 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:24:41 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:22:44 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/date.h"
 
 static int  date_after(t_date *date, int month, int day, int hour)
 {

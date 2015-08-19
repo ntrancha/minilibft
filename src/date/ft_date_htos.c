@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 02:45:48 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/11 05:53:32 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:22:05 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/date.h"
+#include "../../includes/date.h"
 
 long    ft_date_htos(int hour)
 {

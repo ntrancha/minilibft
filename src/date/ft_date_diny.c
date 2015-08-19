@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 14:25:10 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/08 21:15:48 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:21:17 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int		ft_date_diny(int year)
 {

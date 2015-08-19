@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 20:08:01 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 20:08:01 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:02:14 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 int		ft_dtoi(double n)
 {

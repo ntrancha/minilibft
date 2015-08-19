@@ -6,11 +6,9 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 20:12:05 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 20:12:05 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:05:32 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "includes/libft.h"
 
 double		ft_itod(int n)
 {

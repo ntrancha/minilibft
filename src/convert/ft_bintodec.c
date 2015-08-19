@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 11:47:17 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/16 11:47:17 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:59:43 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/math.h"
+#include "../../includes/convert.h"
+#include "../../includes/strings.h"
 
 int			ft_bintodec(int bin)
 {

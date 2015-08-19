@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:27:47 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/01/13 13:09:40 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 05:58:48 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 int			ft_atoi(const char *str)
 {

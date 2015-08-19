@@ -6,12 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 17:34:54 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/15 17:34:54 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:00:24 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/strings.h"
 
 char		*ft_ctos(char c)
 {

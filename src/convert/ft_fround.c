@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/27 10:46:10 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/27 10:46:10 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:03:08 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "includes/libft.h"
+#include "../../includes/count.h"
+#include "../../includes/convert.h"
 
 float		ft_fround(float n, int p)
 {

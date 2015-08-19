@@ -6,12 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/26 21:14:37 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/26 21:14:37 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:03:42 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/count.h"
+#include "../../includes/convert.h"
+#include "../../includes/strings.h"
+#include "../../includes/macros.h"
 
 static char		*ft_ftoa_cut(float n, char *s)
 {

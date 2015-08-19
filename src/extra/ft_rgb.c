@@ -6,11 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 12:30:16 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/16 12:30:16 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:26:08 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/convert.h"
 
 static int         bintodec(char *str)
 {

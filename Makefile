@@ -121,6 +121,10 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/date/ft_date_dtos.c\
 		../minilibft/src/date/ft_date_timestamp.c\
 		../minilibft/src/date/ft_timestamp.c\
+		../minilibft/src/extra/ft_rgb.c\
+		../minilibft/src/extra/ft_getcol.c\
+		../minilibft/src/extra/ft_getrow.c\
+		../minilibft/src/extra/ft_getpid.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

@@ -18,5 +18,6 @@
 # include "test.h"
 # include "math.h"
 # include "bag.h"
+# include "count.h"
 
 #endif

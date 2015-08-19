@@ -104,6 +104,13 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/bag/ft_bag_delnode.c\
 		../minilibft/src/bag/ft_bag_del.c\
 		../minilibft/src/bag/ft_bag_content.c\
+		../minilibft/src/count/ft_strlen.c\
+		../minilibft/src/count/ft_nbrlen.c\
+		../minilibft/src/count/ft_floatlenfloat.c\
+		../minilibft/src/count/ft_floatlen.c\
+		../minilibft/src/count/ft_doublelen.c\
+		../minilibft/src/count/ft_doublelendouble.c\
+		../minilibft/src/count/ft_cinstr.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

@@ -21,5 +21,7 @@
 # include "count.h"
 # include "date.h"
 # include "extra.h"
+# include "opt.h"
+# include "put.h"
 
 #endif

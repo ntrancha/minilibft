@@ -125,6 +125,25 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/extra/ft_getcol.c\
 		../minilibft/src/extra/ft_getrow.c\
 		../minilibft/src/extra/ft_getpid.c\
+		../minilibft/src/opt/ft_optget.c\
+		../minilibft/src/opt/ft_isopt.c\
+		../minilibft/src/opt/ft_optdel.c\
+		../minilibft/src/opt/ft_opttest.c\
+		../minilibft/src/opt/ft_optgetopt_simple.c\
+		../minilibft/src/opt/ft_optgetopt_double.c\
+		../minilibft/src/opt/ft_optgetopt_next.c\
+		../minilibft/src/put/ft_putnbr_fd.c\
+		../minilibft/src/put/ft_putchar_fd.c\
+		../minilibft/src/put/ft_putstr_fd.c\
+		../minilibft/src/put/ft_putendl_fd.c\
+		../minilibft/src/put/ft_putchar.c\
+		../minilibft/src/put/ft_putstr.c\
+		../minilibft/src/put/ft_putendl.c\
+		../minilibft/src/put/ft_putnbr.c\
+		../minilibft/src/put/ft_putnbr_endl.c\
+		../minilibft/src/put/ft_putfloat.c\
+		../minilibft/src/put/ft_putlong.c\
+		../minilibft/src/put/ft_putdouble.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

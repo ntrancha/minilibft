@@ -6,21 +6,17 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:40:13 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/09 13:14:32 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:42:40 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "includes/libft.h"
+#include "../../includes/put.h"
 
 void		ft_putendl_fd(char const *s, int fd)
 {
-	char	endline;
-
 	if (s && fd)
 	{
-		endline = '\n';
 		ft_putstr_fd(s, fd);
-		write(fd, &endline, 1);
+		ft_putstr_fd("\n", fd);
 	}
 }

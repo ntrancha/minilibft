@@ -6,12 +6,12 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/15 12:20:06 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/15 12:20:06 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:40:40 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "includes/libft.h"
+#include "../../includes/put.h"
+#include "../../includes/tab.h"
 
 int     ft_puttab(t_tab *tab)
 {

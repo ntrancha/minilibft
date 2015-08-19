@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/26 21:54:50 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/12/26 21:54:50 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:38:51 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/put.h"
+#include "../../includes/convert.h"
 
 void		ft_putfloat(float n)
 {

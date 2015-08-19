@@ -6,11 +6,11 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:32:07 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/08 16:54:45 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:37:44 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/put.h"
 
 void		ft_putendl(char const *s)
 {

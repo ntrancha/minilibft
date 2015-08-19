@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_isopt.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 14:37:43 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/19 06:40:22 by ntrancha         ###   ########.fr       */
+/*   Created: 2015/07/28 21:05:46 by ntrancha          #+#    #+#             */
+/*   Updated: 2015/08/19 06:36:16 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/put.h"
+#include "../../includes/opt.h"
 
-void ft_putstr_fd(char const *s, int fd)
+int         ft_isopt(char *option)
 {
-	while (*s != '\0' && fd)
-	{
-		ft_putchar_fd(*s, fd);
-		s++;
-	}
+    if (!option[0] || option[0] != '-')
+        return (0);
+    if (option[1])
+        if (option[1] == '-')
+            return (2);
+    return (1);
+
 }

@@ -6,11 +6,13 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:33:16 by ntrancha          #+#    #+#             */
-/*   Updated: 2014/11/19 10:58:29 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:39:22 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/strings.h"
+#include "../../includes/put.h"
+#include "../../includes/convert.h"
 
 void ft_putnbr(int n)
 {

@@ -6,11 +6,14 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 19:17:24 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/12 21:27:24 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/19 06:33:58 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "../../includes/opt.h"
+#include "../../includes/strings.h"
+#include "../../includes/list.h"
+#include "../../includes/mem.h"
 
 char        *ft_optgetopt_double(t_opt *options, char *opt)
 {
@@ -21,7 +24,7 @@ char        *ft_optgetopt_double(t_opt *options, char *opt)
     tmp = NULL;
     if (ft_opttest(options, opt) < 1)
         return (NULL);
-    node = options->start;
+    node = ((t_list*)options)->start;
     while (node)
         if (ft_strcmp((char*)node->content, opt) == 0)
         {

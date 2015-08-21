@@ -262,6 +262,8 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/list/ft_lstadd.c\
 		../minilibft/src/list/ft_lstmap.c\
 		../minilibft/src/list/ft_lstiter.c\
+		../minilibft/src/sig/ft_signalsend.c\
+		../minilibft/src/sig/ft_signalread.c\
 
 $(NAME): $(OBJS)
 	@ar rc $@ $^

@@ -30,5 +30,6 @@
 # include "file.h"
 # include "list.h"
 # include "macros.h"
+# include "sig.h"
 
 #endif

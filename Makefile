@@ -246,6 +246,7 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/list/ft_listaddafter.c\
 		../minilibft/src/list/ft_listcreate.c\
 		../minilibft/src/list/ft_listtostr.c\
+		../minilibft/src/list/ft_listtotab.c\
 		../minilibft/src/list/ft_listtostrd.c\
 		../minilibft/src/list/ft_listcontent.c\
 		../minilibft/src/list/ft_listdel.c\

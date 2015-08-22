@@ -6,53 +6,42 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/22 01:14:10 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/22 01:24:52 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/22 22:51:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <dirent.h>
 #include "../../includes/file.h"
 #include "../../includes/mem.h"
+#include "../../includes/put.h"
 #include "../../includes/strings.h"
-
-char        **get_dir_tab(t_list *list, int count)
-{
-    char            **ret;
-    t_node          *node;
-    int             index;
-
-    ret = ft_memalloc(sizeof(char*) * count + 1);
-    node = list->start;
-    index = 0;
-    while (node)
-    {
-        ret[index] = ft_strdup(node->content);
-        index++;
-        node = node->next;
-    }
-    ft_listdel(list, ft_memdel);
-    ret[index] = NULL;
-    return (ret);
-}
 
 char        **ft_getdirtab(char *path, char *error)
 {
-    t_list          *list;
     struct dirent   *file;
     DIR             *rep;
     int             count;
+    int             index;
+    char            **tab;
 
     rep = ft_opendir(path, error);
     if (rep == NULL)
         return (NULL);
-    list = ft_listcreate();
-    if (list == NULL)
-        return (NULL);
     count = 0;
     while ((file = readdir(rep)))
-        if (ft_listadd(list, (void *)file->d_name) == NULL)
-            return (NULL);
-        else
             count++;
-    return (get_dir_tab(list, count));
+    ft_closedir(rep);
+    rep = ft_opendir(path, error);
+    if (rep == NULL)
+        return (NULL);
+    tab = ft_memalloc(sizeof(char*) * (count + 1));
+    index = 0;
+    while (index < count)
+    {
+        file = readdir(rep);
+        tab[index++] = ft_strdup(file->d_name);
+    }
+    tab[index] = NULL;
+    ft_closedir(rep);
+    return (tab);
 }

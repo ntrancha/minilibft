@@ -6,13 +6,13 @@
 #    By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/08 10:45:53 by ntrancha          #+#    #+#              #
-#    Updated: 2015/08/18 22:36:28 by ntrancha         ###   ########.fr        #
+#    Updated: 2015/08/22 22:25:27 by ntrancha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME =	libft.a
 
-FLAG =	-Wall -Wextra -Werror
+FLAG =	-Wall -Wextra -Werror -g
 
 OBJS =	$(FILE:.c=.o)
 
@@ -235,6 +235,7 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/file/ft_fileinfo.c\
 		../minilibft/src/file/ft_fileget_rights.c\
 		../minilibft/src/file/ft_getdir.c\
+		../minilibft/src/file/ft_getdirtab.c\
 		../minilibft/src/file/ft_getdir_rec.c\
 		../minilibft/src/file/ft_fdos_displaycol.c\
 		../minilibft/src/file/ft_fdos_del.c\

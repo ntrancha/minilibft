@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/17 02:48:24 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/19 07:27:08 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 04:37:51 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,59 +17,87 @@
 #include "../../includes/file.h"
 #include "../../includes/mem.h"
 #include "../../includes/strings.h"
+#include "../../includes/put.h"
+#include "../../includes/list.h"
 
-t_dos                *parcour(t_dos *dos, char *path, char *error);
+t_dos               *parcour(t_dos *dos, char *path, char *error);
 
-void                recurs(t_file *file, t_dos *dos, char *error, char *path)
+void                recurs(char *path, char *file, t_dos *dos, char *error)
 {
     char            *tmp;
 
-    if (ft_strcmp(file->name, ".") != 0 && ft_strcmp(file->name, "..") != 0)
-    {
-        if (ft_strcmp(path, ".") == 0)  
-            tmp = ft_strdup(file->name);
-        else
-            tmp = ft_strmjoin(path, "/", file->name);
+    if (ft_strcmp(path, ".") == 0)
+        tmp = ft_strdup(file);
+    else
+        tmp = ft_strmjoin(path, "/", file);
+    if (ft_strcmp(file, ".") != 0 && ft_strcmp(file, "..") != 0)
         parcour(dos, tmp, error);
-        ft_strdel(&tmp);
-    }
-    ft_strdel(&(file->name));
-    ft_memdel((void**)&file);
+    ft_strdel(&tmp);
 }
 
-t_dos                *parcour(t_dos *dos, char *path, char *error)
+char                *fchemin(char *path, char *file)
 {
-    t_fdos          *dir;
+    char            *chemin;
+
+    if (ft_strcmp(path, ".") == 0) 
+        chemin = ft_strdup(file);
+    else if (ft_strcmp(path, "/") == 0) 
+        chemin = ft_strjoin("/", file);
+    else
+        chemin = ft_strmjoin(path, "/", file);
+    return (chemin);
+}
+
+void                add(char *path, t_dos *dos, char *file)
+{
+    if (ft_strcmp(path, ".") == 0)
+        ft_listadd(dos, (void *)ft_strdup(file));
+    else if (ft_strcmp(path, "/") == 0)
+        ft_listadd(dos, (void *)ft_strjoin("/", file));
+    else
+        ft_listadd(dos, (void *)ft_strmjoin(path, "/", file));
+}
+
+t_dos               *parcour(t_dos *dos, char *path, char *error)
+{
     struct dirent   *file;
+    struct stat     stats;
     DIR             *rep;
-    t_file          *fichier;
+    char            *chemin;
 
     rep = ft_opendir(path, error);
     if (rep == NULL)
         return (NULL);
-    dir = ft_listcreate();
-    if (dir == NULL)
-        return (NULL);
     while ((file = readdir(rep)))
     {
-        fichier = ft_fileinfo(file->d_name);
-        if (ft_filetype(fichier) == 'd')
-            recurs(fichier, dos, error, path);
-        else if (ft_listadd(dir, (void *)fichier) == NULL)
-            return (NULL);
+        chemin = fchemin(path, file->d_name);
+        if (lstat(chemin, &stats) == -1)
+            stat(chemin, &stats);
+        if (S_ISDIR(stats.st_mode))
+            recurs(path, file->d_name, dos, error);
+        else
+            add(path, dos, file->d_name);
+        ft_strdel(&chemin);
     }
-    ft_fdos_displaycol(dir, 0);
-    ft_listadd(dos, (void *)dir);
     ft_closedir(rep);
     return (dos);
 }
 
-
 t_dos               *ft_getdir_rec(char *path, char *error)
 {
     t_dos           *dos;
+    char            *tmp;
 
+    if (path == NULL)
+        return (NULL);
+    if (path[ft_strlen(path) - 1] == '/' && ft_strcmp(path, "/") != 0)
+        tmp = ft_strsub(path, 0, ft_strlen(path) - 1);
+    else
+        tmp = ft_strdup(path);
+    if (tmp == NULL)
+        return (NULL);
     dos = ft_listcreate();
-    parcour(dos, path, error);
+    dos = parcour(dos, tmp, error);
+    ft_strdel(&tmp);
     return (dos);
 }

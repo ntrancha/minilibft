@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:42:48 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 20:38:44 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 21:24:58 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strcat(char *s1, char const *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmjoin(char const *s1, char const *s2, char const *s3);
-char	*ft_strmmjoin(t_cchar *s1, t_cchar *s2, t_cchar *s3);
+char	*ft_strmmjoin(t_cchar *s1, t_cchar *s2, t_cchar *s3, t_cchar *s4);
 void	ft_straddchar(char **str, char c);
 void	ft_strfusion(char **dst, char **src);
 void	ft_strfusiondel(char **dst, char **src);

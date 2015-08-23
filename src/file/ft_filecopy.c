@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/23 20:39:38 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 21:01:39 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 21:36:11 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,13 @@
 int         ft_filecopy(char *file_src, char *path_dst)
 {
     char    *content;
-    char    *file;
-    char    *path;
-    char    *file_dst;
 
     content = ft_get_file(file_src);
     if (content == NULL)
         return (-1);
-    file = ft_finpath(file_src);
-    path = ft_dinpath(path_dst);
-    file_dst = ft_strmjoin(path, "/", file);
-    if (ft_filedel(file_dst) == -1)
-        return (-1);
-    if (ft_write_file(file_dst, content) == -1)
-        return (-1);
-    ft_strdel(&file);
-    ft_strdel(&path);
-    ft_strdel(&file_dst);
+    ft_filedel(path_dst);
+    if (ft_write_file(path_dst, content) == -1)
+        return (-3);
+    ft_strdel(&content);
     return (1);
 }

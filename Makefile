@@ -48,10 +48,12 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/strings/ft_strncpy.c\
 		../minilibft/src/strings/ft_strmore.c\
 		../minilibft/src/strings/ft_strlcat.c\
+		../minilibft/src/strings/ft_strlen.c\
 		../minilibft/src/strings/ft_strcat.c\
 		../minilibft/src/strings/ft_strncat.c\
 		../minilibft/src/strings/ft_strjoin.c\
 		../minilibft/src/strings/ft_strmjoin.c\
+		../minilibft/src/strings/ft_strmmjoin.c\
 		../minilibft/src/strings/ft_straddchar.c\
 		../minilibft/src/strings/ft_strfusion.c\
 		../minilibft/src/strings/ft_strfusiondel.c\
@@ -234,6 +236,9 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/file/ft_closedir.c\
 		../minilibft/src/file/ft_fileinfo.c\
 		../minilibft/src/file/ft_fileget_rights.c\
+		../minilibft/src/file/ft_filedel.c\
+		../minilibft/src/file/ft_filecopy.c\
+		../minilibft/src/file/ft_filemove.c\
 		../minilibft/src/file/ft_getdir.c\
 		../minilibft/src/file/ft_getdirtab.c\
 		../minilibft/src/file/ft_getdir_rec.c\

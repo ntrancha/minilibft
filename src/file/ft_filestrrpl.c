@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/23 21:55:06 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 22:02:06 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 22:06:40 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 int         ft_filestrrpl(char *file, char *src, char *mod)
 {
+    int     ret;
     char    *content;
 
     content = ft_get_file(file);
@@ -22,5 +23,7 @@ int         ft_filestrrpl(char *file, char *src, char *mod)
         return (-1);
     ft_strnrpl(&content, src, mod, -1);
     ft_filedel(file);
-    return (ft_write_file(file, content));
+    ret = ft_write_file(file, content);
+    ft_strdel(&content);
+    return (ret);
 }

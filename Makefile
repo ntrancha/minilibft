@@ -238,6 +238,7 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/file/ft_getdirtab.c\
 		../minilibft/src/file/ft_getdir_rec.c\
 		../minilibft/src/file/ft_fileindos.c\
+		../minilibft/src/file/ft_fileindos_rec.c\
 		../minilibft/src/file/ft_fdos_displaycol.c\
 		../minilibft/src/file/ft_fdos_del.c\
 		../minilibft/src/file/ft_dos_del.c\

@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:47:17 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 10:38:38 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 21:01:34 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ DIR     *ft_opendir(char *path, char *error);
 int     ft_closedir(DIR *rep);
 t_file  *ft_fileinfo(char *file);
 int     ft_fileget_rights(t_file *file);
+int     ft_filedel(char *file);
+int     ft_filecopy(char *file_src, char *path_dst);
+int     ft_filemove(char *file_src, char *path_dst);
 t_fdos  *ft_getdir(char *path, char *error);
 char    **ft_getdirtab(char *path, char *error);
 t_fdos  *ft_getdir_rec(char *path, char *error);

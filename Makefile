@@ -242,6 +242,8 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/file/ft_fdos_del.c\
 		../minilibft/src/file/ft_dos_del.c\
 		../minilibft/src/file/ft_filetype.c\
+		../minilibft/src/file/ft_dinpath.c\
+		../minilibft/src/file/ft_finpath.c\
 		../minilibft/src/list/ft_listadd.c\
 		../minilibft/src/list/ft_listaddfirst.c\
 		../minilibft/src/list/ft_listaddafter.c\

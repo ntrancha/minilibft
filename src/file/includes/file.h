@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:47:17 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 06:27:08 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 10:28:07 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,7 @@ void    ft_fdos_displaycol(t_fdos *list, int col);
 void    ft_fdos_del(t_fdos *list);
 void    ft_dos_del(t_dos *list);
 char    ft_filetype(t_file *file);
+char    *ft_dinpath(char *pathfile);
+char    *ft_finpath(char *pathfile);
 
 #endif

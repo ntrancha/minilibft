@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/22 22:17:08 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 10:36:37 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 17:58:00 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ int     main(int argc, char **argv)
     t_fdos  *list;
     int     index;
 
-    ft_putendl(ft_finpath("toto/"));
-    return (0);
-    list = ft_getdir_rec("includes/", NULL);
+    list = ft_getdir_rec(".", NULL);
     tab = ft_listtotab(list);
     index = 0;
     while (tab[index])

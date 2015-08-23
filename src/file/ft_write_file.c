@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/07/28 22:40:05 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/19 07:31:15 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 21:39:27 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int     ft_write_file(const char *pathname, char *content)
 
     if (!pathname || !content)
         return (-1);
+    ft_filedel((char*)pathname);
     fd = open(pathname, O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
     if (fd < 0)
         return (-1);

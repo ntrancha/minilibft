@@ -6,7 +6,7 @@
 /*   By: ntrancha <ntrancha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/02 17:47:17 by ntrancha          #+#    #+#             */
-/*   Updated: 2015/08/23 10:36:32 by ntrancha         ###   ########.fr       */
+/*   Updated: 2015/08/23 10:38:38 by ntrancha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,6 @@
 
 typedef t_list          t_dos;
 typedef t_list          t_fdos;
-
-typedef struct          s_dir
-{
-    struct s_files      *files;
-    char                *path;
-    int                 size;
-    struct s_dir        *next;
-    struct s_dir        *prev;
-}                       t_dir;
-
-typedef struct          s_files
-{
-    struct s_file       *file;
-    struct s_files      *next;
-    struct s_files      *prev;
-}                       t_files;
 
 typedef struct          s_file
 {

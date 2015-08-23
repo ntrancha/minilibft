@@ -239,6 +239,7 @@ FILE =	../minilibft/src/mem/ft_memchr.c\
 		../minilibft/src/file/ft_filedel.c\
 		../minilibft/src/file/ft_filecopy.c\
 		../minilibft/src/file/ft_filemove.c\
+		../minilibft/src/file/ft_filestrrpl.c\
 		../minilibft/src/file/ft_getdir.c\
 		../minilibft/src/file/ft_getdirtab.c\
 		../minilibft/src/file/ft_getdir_rec.c\
